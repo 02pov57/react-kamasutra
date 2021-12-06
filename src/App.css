@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.wrapper{
+  display: grid;
+  grid-template-areas: 
+  "h h"
+  "n c";
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+ /* margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;*/
+}
+
+.item-grid{
+  margin: 0.5em;
+}
+.header-app{
+  grid-area: h;
+  background: green;
+}
+.header-app img{
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.nav{
+  grid-area: n;
+  background: yellow;
+}
+.content{
+  grid-area: c;
+  background: blue;
+}
+
+.img-head{
+  width: 100%;
+}
+
+.base-info{
+  display: grid;
+  grid-template-areas: "ava desc";
+  grid-template-columns: 2fr 7fr;
+  margin-top: 20px;
+}
+
+.description{
+  display: grid;
+  grid-area: desc;
+}
+
+.avatar{
+  display: grid;
+  grid-area: ava;
+}
+
+.new-post{
+  display: grid;
+  margin-top: 25px;
+}
+
+.new-post-text textarea{
+  resize: none;
+  background: grey;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+li {
+  color: red;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
